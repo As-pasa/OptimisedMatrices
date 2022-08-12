@@ -28,14 +28,6 @@ void GetDefaultMatrixFromConsole(Matrix* matr) {
 
 
 int main() {
-	Matrix* matr = MatrixFactory::CreateDiagonalMatrix(2, 3);
-	Matrix* def = MatrixFactory::CreateDefaultMatrix(2, 2);
-	GetDefaultMatrixFromConsole(def);
-	GetDiagonalMatrixFromConsole(matr);
-	Print(matr);
-	Print(def);
-	Print(def->Mult( matr));
 
 }
 
-//TODO обрезать костыль, в default mult и default  add берется default matrix  а не  diagonal
